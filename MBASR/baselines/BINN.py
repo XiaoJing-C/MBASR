@@ -589,7 +589,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run supervised GRU.")
 
     parser.add_argument('--epoch', type=int, default=10000, help='Number of max epochs.')
-    parser.add_argument('--data', nargs='?', default='datasets/Tmall/data', help='data directory')
+    parser.add_argument('--data', nargs='?', default='datasets/JD/data', help='data directory')
     # parser.add_argument('--pretrain', type=int, default=1,
     #                     help='flag for pretrain. 1: initialize from pretrain; 0: randomly initialize; -1: save the model to pretrain file')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size.')
