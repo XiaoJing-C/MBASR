@@ -231,8 +231,7 @@ if __name__ == '__main__':
                 len_seq = list(batch['len_seq'].values())
                 target=list(batch['target'].values())
 
-                item_seq = [row[-5::-5][::-1] for row in item_seq]
-                behavior_seq = [row[-5::-5][::-1] for row in behavior_seq]
+            
                
                 len_seq = [np.sum(seq!=item_num) for seq in item_seq]
                 len_seq = [ss if ss > 0 else 1 for ss in len_seq]
