@@ -129,7 +129,7 @@ if __name__ == '__main__':
         #         item_seq = list(batch['item_seq'].values())
         #         len_seq = list(batch['len_seq'].values())
                 
-        #         # item_seq = [row[-5::-5][::-1]+[item_num]*40 for row in item_seq]
+        #         
         #         # len_seq = [np.sum(seq!=item_num) for seq in item_seq]
                 
         #         # len_seq = [ss if ss > 0 else 1 for ss in len_seq]
